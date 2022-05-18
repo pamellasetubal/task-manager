@@ -1,6 +1,7 @@
-from fastapi.testclient import TestClient
 from fastapi import status
-from task_manager.manager import app, TASKS
+from fastapi.testclient import TestClient
+
+from task_manager.manager import TASKS, app
 
 
 def test_when_list_task_should_receive_200_status_code():
