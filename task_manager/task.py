@@ -1,5 +1,6 @@
-from pydantic import BaseModel, constr
 from uuid import UUID
+
+from pydantic import BaseModel, constr
 
 from task_manager.possible_status import PossibleStatus
 

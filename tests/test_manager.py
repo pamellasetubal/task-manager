@@ -114,7 +114,9 @@ def test_task_should_have_a_description():
 
 def test_description_should_contain_up_to_140_character():
     client = TestClient(app)
-    response = client.post(tasks, json={"title": "title1", "description": "*" * 141})
+    response = client.post(
+        tasks, json={"title": "title1", "description": "*" * 141}
+    )
     assert response.status_code == status.HTTP_422_UNPROCESSABLE_ENTITY
 
 

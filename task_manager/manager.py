@@ -1,8 +1,8 @@
-from fastapi import FastAPI
-from task_manager.task import InputTask, Task
 from uuid import uuid4
-from fastapi import status
 
+from fastapi import FastAPI, status
+
+from task_manager.task import InputTask, Task
 
 app = FastAPI()
 TASKS = []
